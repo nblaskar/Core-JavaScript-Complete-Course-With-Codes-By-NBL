@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//Process-1	
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.color='white';
+					this.ram='4GB';
+					this.price=function(){
+						document.write(this.model+"price=RS300");
+					};
+					
+	}
+	var nokia= new mobile('J7');
+	for(var specn in nokia)
+	{
+		document.write(nokia[specn] +"<br>");
+	}*/
+	
+	/*
+		//Process-2
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.color='white';
+					this.ram='4GB';
+					this.price=function(){
+						document.write(this.model+"price=RS300");
+					};
+					
+	}
+	var nokia= new mobile('J7');
+	for(var specn in nokia)
+	{
+		if(typeof nokia[specn]!=='function')
+		{
+			document.write(nokia[specn] +"<br>");
+		}
+	}*/
+	
+	/*
+		//Process-3
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.color='white';
+					this.ram='4GB';
+					this.price=function(){
+						document.write(this.model+"price=RS300");
+					};
+					
+	}
+	var nokia= new mobile('J7');
+	for(var specn in nokia)
+	{
+		if(typeof nokia[specn]!=='function')
+		{
+			document.write(specn+" "+nokia[specn] +"<br>");
+		}
+	}*/
+	
+			//Process-3
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.color='white';
+					this.ram='4GB';
+					this.price=function(){
+						document.write(this.model+"price=RS300");
+					};
+					
+	}
+	var nokia= new mobile('J7');
+	
+	document.write(Object.keys(nokia) +"<br>");
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

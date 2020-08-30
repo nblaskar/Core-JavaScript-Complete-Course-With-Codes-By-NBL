@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	
+	/*
+	//Public process
+	var Mobile=function(){
+		this.model='J7';		
+		this.price=3000;
+		this.show=function(){
+			document.write(this.model+" And "+this.price);
+		};
+	}
+	var nokia=new Mobile();
+	nokia.show();
+	
+	document.write(nokia.price);*/
+	
+	
+	
+	//Private process
+	var Mobile=function(){
+		var model='J7';		
+		let price=3000;
+		const color='white';
+		this.show=function(){ return (price+color);};
+	}
+	var nokia=new Mobile();
+	document.write(nokia.show());
+	
+	document.write(nokia.price); //get error
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

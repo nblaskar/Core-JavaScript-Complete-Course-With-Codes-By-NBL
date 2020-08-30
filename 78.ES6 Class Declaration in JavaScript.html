@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	//CClass Declaration
+	class Mobile{
+		constructor(){
+		//instance properties
+			this.a=12;
+			this.show=function(){
+				return this.a+"Instance Members";
+			};
+		}
+		//Prototype metods
+		display(){
+			return "Prototype Members"; 
+		}
+	}
+	//Accessing
+	var nokia=new Mobile();
+	//document.write(nokia.a);
+	document.write(nokia.show());
+	//document.write(nokia.display());
+	console.log(Mobile.prototype);
+
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//Constructor Without Parameter
+	function  mobile(){				
+					this.model='3310',
+					this.price=function(){
+								document.write(this.model+"Price=3000");
+									}					
+	
+	}
+	var samsung= new mobile();
+	samsung.price();
+	var lg=new mobile();
+	lg.price(); */
+	
+	
+	
+	//Constructor Without Parameter
+	function  mobile(m_model,m_brand){				
+					this.model=m_model;
+					this.brand=m_brand;
+					this.price=function(rs){
+								document.write(this.model+this.brand+"Price="+rs);
+									};			
+	
+	}
+	var samsung= new mobile('J7','Nokia');
+	samsung.price(234);
+
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//By Using typeof Operator
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.memory=4;
+					
+	}
+	var nokia= new mobile('J7');
+	if(typeof nokia.memory!=='undefined')
+	{
+		document.write("Exist");
+	}
+	else
+	{
+		document.write("Does not Exist");
+	}
+
+	*/
+	/*
+	//By Using in Operator
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.memory=4;
+					
+	}
+	var nokia= new mobile('J7');
+	if('memory' in nokia)
+	{
+		document.write("Exist");
+	}
+	else
+	{
+		document.write("Does not Exist");
+	}
+	*/
+	
+	
+	
+	//By Using hasOwnProperty function
+	function  mobile(m_model){				
+					this.model=m_model;
+					this.color='white';
+					
+	}
+	var nokia= new mobile('J7');
+	if(nokia.hasOwnProperty('color'))
+	{
+		document.write("Exist");
+	}
+	else
+	{
+		document.write("Does not Exist");
+	}
+	
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

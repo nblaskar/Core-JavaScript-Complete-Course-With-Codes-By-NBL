@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	var Mobile=function(model_no,sprice){
+		this.model=model_no;
+		this.color='white';
+		this.price=3000;
+		this.sp=sprice;
+		this.sellingprice=function(){
+			return (this.price+this.sp);
+		};
+		this.data=function(){
+			document.write("Model No:"+this.model+"Price"+this.sellingprice());
+		};
+	
+	}
+	var nokia=new Mobile('J7',2000);
+	nokia.data();
+	
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

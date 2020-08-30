@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+
+	//Super Class
+	var Mobile=function(model){
+		this.a=10;
+	}
+	//Prototype Property for Mobile
+	Mobile.prototype.z=30;
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+
+	}
+	//Sub Class
+	var Galaxy=function(){
+		Samsung.call(this);
+		this.c=100;;
+
+	}
+	//Inheritance
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	
+	
+	Galaxy.prototype=Object.create(Samsung.prototype);
+	Galaxy.prototype.constructor=Galaxy;
+	
+
+	//Accessing
+	var m=new Mobile();
+	var s=new Samsung();
+	var g=new Galaxy();
+	
+	//Printing
+	document.write("Galaxy Object Can Access<br>");
+	document.write("Mobile A:"+g.a+"<br>");
+	document.write("Samsung B:"+g.b+"<br>");
+	document.write("Galaxy C:"+g.c+"<br>");
+	document.write("Mobile Prototype Z:"+g.z+"<br>");
+	
+	document.write("Samsung Object Can Access<br>");
+	document.write("Mobile A:"+s.a+"<br>");
+	document.write("Samsung B:"+s.b+"<br>");
+	document.write("Galaxy C:"+s.c+"<br>");
+	document.write("Mobile Prototype Z:"+s.z+"<br>");
+	
+	document.write("Mobile Object Can Access<br>");
+	document.write("Mobile A:"+m.a+"<br>");
+	document.write("Samsung B:"+m.b+"<br>");
+	document.write("Galaxy C:"+m.c+"<br>");
+	document.write("Mobile Prototype Z:"+m.z+"<br>");
+
+
+	
+	
+	
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

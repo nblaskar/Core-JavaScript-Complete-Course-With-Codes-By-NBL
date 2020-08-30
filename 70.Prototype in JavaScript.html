@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	
+
+	var Mobile=function(model_no){
+		//Instance Member
+		this.model=model_no;		
+		this.price=3000;		
+	}
+	var samsung=new Mobile('galaxy');
+	var nokia=new Mobile('n73');
+		//Prototype Method
+	Mobile.prototype.cost=function(){
+		document.write("Price=450");
+		};
+		//Prototype Member
+	Mobile.prototype.color='white';		
+	document.write(samsung.color);
+	nokia.cost();
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

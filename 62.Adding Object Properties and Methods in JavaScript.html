@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	
+	
+	
+	
+	var fees={Rahul:100,Sumit:200};	
+	document.write(fees.Rahul+" "+fees.Sumit+"<br>");
+	//adding properties at runtime
+	fees.Sonam=600; //fees['Sonam']=600;
+	document.write(fees.Rahul+" "+fees.Sumit+" "+fees.Sonam+"<br>");
+	//adding Method at runtime
+	fees.total=function(){return (100+200+600);};
+	document.write(fees.Rahul+" "+fees.Sumit+" "+fees.Sonam+" "+fees.total()+"<br>");
+	
+	
+	console.log(fees);
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

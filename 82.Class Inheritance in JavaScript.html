@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	class Father{
+		constructor(){
+			this.money=3500;
+		}
+		Fmoney(){
+			return "Father Money"+this.money+"<br>";
+		}
+	}
+	class Son extends Father{
+		Smoney(){
+			return "Son Money"+this.money+"<br>";
+		}	
+	
+	}
+	class GrandSon extends Son{
+		GSmoney(){
+			return "Grand Son Money"+this.money+"<br>";
+		}
+	
+	}
+	var g= new GrandSon();
+
+	var f=new Father();
+	
+	document.write("<h4>Grand Son Can Access</h4><br>");
+	document.write(g.GSmoney());
+	document.write(g.Smoney());
+	document.write(g.Fmoney());
+
+	
+	
+
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

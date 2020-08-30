@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//Super Class
+	var Mobile=function(){
+		this.a=10;
+	}
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+	}
+	//Accessing 
+	var s=new Samsung();
+	document.write(s.a);
+	document.write(s.b);
+	*/
+	
+	/*
+	//Super Class
+	var Mobile=function(){
+		this.a=10;
+	}
+	//Prototype Properties
+	Mobile.prototype.z=30;
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+	}
+	//Prototype Inheritance process
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	//Accessing 
+	var s=new Samsung();
+	document.write(s.a);
+	document.write(s.b);
+	document.write(s.z);
+	*/
+	
+	
+	/*
+	//Super Class
+	var Mobile=function(){
+		this.a=10;
+	}
+	//Prototype Properties
+	Mobile.prototype.z=30;
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+	}
+	//Prototype Inheritance process
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	//Accessing 
+	var s=new Samsung();
+	var m= new Mobile();
+	document.write(m.a);
+	document.write(m.b);
+	document.write(m.z);
+	
+	*/
+	
+	/*
+	
+	//Super Class
+	var Mobile=function(){
+		this.a=10;
+	}
+	//Prototype Properties
+	Mobile.prototype.z=30;
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+	}
+	//Prototype Inheritance process
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	//redefine Prototype Properties
+	Samsung.prototype.z=50;
+	//Accessing 
+	var s=new Samsung();
+	var m=new Mobile();
+	document.write(m.z);
+	document.write(s.z);
+	*/
+	
+	
+	//Super Class
+	var Mobile=function(){
+		this.a=10;
+	}
+	//Prototype Properties
+	Mobile.prototype.z=30;
+	//Sub Class
+	var Samsung=function(){
+		Mobile.call(this);
+		this.b=20;
+	}
+		//redefine Prototype Properties
+	Samsung.prototype.z=50;
+	Mobile.prototype.z=700;
+	//Prototype Inheritance process
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+
+	//Accessing 
+	var s=new Samsung();
+	var m=new Mobile();
+	document.write(m.z);
+	document.write(s.z);
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

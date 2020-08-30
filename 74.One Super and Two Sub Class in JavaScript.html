@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+
+	//---Structure-1 --//
+	
+	//Super Class
+	var Mobile=function(){
+	}
+	//Prototype Method
+	Mobile.prototype.getMethod=function(){
+		return this.model;
+	}
+	//Sub Class-1
+	var Samsung=function(model,price){
+		this.model=model;
+		this.price=price;
+	}
+	//Sub Class-2
+	var Lenovo=function(model){
+		this.model=model;
+	}
+	//Inheritance
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	Lenovo.prototype=Object.create(Mobile.prototype);
+	Lenovo.prototype.constructor=Lenovo
+	
+	//Prototype Method  fo subclass-1
+	Samsung.prototype.getPrice=function(){
+		return this.price;
+	}
+	//Accessing
+	var galaxy=new Samsung('galaxy',3500);
+	var phab2=new Lenovo('phab2');
+	document.write(galaxy.getMethod());
+	document.write(phab2.getMethod());
+	document.write(galaxy.getPrice());
+	//document.write(phab2.getPrice()); //error
+	*/
+	
+	
+	/*
+	//---Structure-2 --//
+	
+	//Function for Inharitance
+	function extend(child,parent){
+		child.prototype=Object.create(parent.prototype);
+		child.prototype.constructor=child;	
+	}
+	
+	//Super Class
+	var Mobile=function(){
+	}
+	//Prototype Method
+	Mobile.prototype.getMethod=function(){
+		return this.model;
+	}
+	//Sub Class-1
+	var Samsung=function(model,price){
+		this.model=model;
+		this.price=price;
+	}
+	//Sub Class-2
+	var Lenovo=function(model){
+		this.model=model;
+	}
+	//Inheritance
+	extend(Samsung,Mobile);
+	extend(Lenovo,Mobile);
+	
+	
+	//Prototype Method  fo subclass-1
+	Samsung.prototype.getPrice=function(){
+		return this.price;
+	}
+	//Accessing
+	var galaxy=new Samsung('galaxy',3500);
+	var phab2=new Lenovo('phab2');
+	document.write(galaxy.getMethod());
+	document.write(phab2.getMethod());
+	document.write(galaxy.getPrice());
+	//document.write(phab2.getPrice()); //error
+	*/
+	
+	
+	//---Structure-3 --//
+	
+	
+	//Super Class
+	var Mobile=function(model){
+		this.model=model;
+	}
+	//Prototype Method
+	Mobile.prototype.getMethod=function(){
+		return this.model;
+	}
+	//Sub Class
+	var Samsung=function(model,price){
+		Mobile.call(this,model)
+		this.price=price;
+	}
+	
+	//Inheritance
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+
+	//Accessing
+	var galaxy=new Samsung('galaxy',3500);
+	document.write(galaxy.getMethod());
+	document.write(galaxy.model);
+
+
+	
+	
+	
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

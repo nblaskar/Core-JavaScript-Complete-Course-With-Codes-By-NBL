@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+
+	//Super Class
+	var Mobile=function(model){
+	}
+	//Prototype Method-Super Class
+	Mobile.prototype.show=function(){
+		return "Super Class Method  ";
+	}
+	//Sub Class
+	var Samsung=function(){
+
+	}	
+	//Inheritance
+	Samsung.prototype=Object.create(Mobile.prototype);
+	Samsung.prototype.constructor=Samsung;
+	
+	//Prototype Method-Sub Class
+	Samsung.prototype.show=function(){
+		return "Sub Class Method  ";
+	}
+
+	//Accessing
+	var sam=new Samsung();
+	var mob=new Mobile();
+	document.write(sam.show());
+	document.write(mob.show());
+
+
+	
+	
+	
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

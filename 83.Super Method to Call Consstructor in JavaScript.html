@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	class Father{
+		constructor(money){
+			this.Tmoney=money;
+		}
+		Fmoney(){
+			return "Father Money"+this.Tmoney+"<br>";
+		}
+	}
+	class Son extends Father{
+		constructor(money){
+			super(money);
+			this.sm=50;
+		}
+
+		Smoney(){
+			return "Son Money"+this.Tmoney+this.sm+"<br>";
+		}	
+	
+	}
+	
+	var s= new Son(100);
+
+//	var f=new Father();
+	
+	document.write(s.Fmoney());
+	document.write(s.Smoney());
+
+	
+	
+
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

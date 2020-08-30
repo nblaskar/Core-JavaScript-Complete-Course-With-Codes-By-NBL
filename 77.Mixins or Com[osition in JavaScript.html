@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	///Structure-1///
+	//features
+	var eating={
+		eat:function(){
+			return "I can eat <br>";
+		}
+	};
+	var walking={
+		walk:function(){
+			return "I can walk <br>";
+		}
+	};
+	var talking={
+		talk:function(){
+			return "I can talk <br>";
+		}
+	};
+	var starting={
+		start:function(){
+			return "I can start <br>";
+		}
+	};
+	//Mixin ptrocess
+	var Rahul=Object.assign({},eating,walking,talking);
+	var Robot=Object.assign({},starting,walking,talking);
+	//accessing
+	document.write(Rahul.eat());
+	document.write(Rahul.walk());
+	document.write(Rahul.talk());
+	
+	
+	document.write(Robot.start());
+	document.write(Robot.walk());
+	document.write(Robot.talk());
+	*/
+	
+	/*
+	///Structure-2///
+	//features
+	var eating={
+		eat:function(){
+			return "I can eat <br>";
+		}
+	};
+	var walking={
+		walk:function(){
+			return "I can walk <br>";
+		}
+	};
+	var talking={
+		talk:function(){
+			return "I can talk <br>";
+		}
+	};
+	var starting={
+		start:function(){
+			return "I can start <br>";
+		}
+	};
+	//Composition Process
+	//Human Class
+	var Human=function(){
+	}
+	//Robot Class
+	var Robot=function(){
+	}
+	//composition
+	Object.assign(Human.prototype,eating,walking,talking)
+	Object.assign(Robot.prototype,starting,walking,talking);
+	//Object making
+	var Rahul=new Human();
+	var Sonam=new Human();
+	var Roboalpha=new Robot();
+	
+	//accessing
+	document.write("<h3>Rahul</h3>");
+	document.write(Rahul.eat());
+	document.write(Rahul.walk());
+	document.write(Rahul.talk());
+	
+	document.write("<h3>Sonam</h3>");
+	document.write(Sonam.eat());
+	document.write(Sonam.walk());
+	document.write(Sonam.talk());
+	
+	document.write("<h3>RoboAlpha</h3>");
+	document.write(Roboalpha.start());
+	document.write(Roboalpha.walk());
+	document.write(Roboalpha.talk());
+	*/
+	
+	
+	///Structure-3///
+	//features
+	var eating={
+		eat:function(){
+			return "I can eat <br>";
+		}
+	};
+	var walking={
+		walk:function(){
+			return "I can walk <br>";
+		}
+	};
+	var talking={
+		talk:function(){
+			return "I can talk <br>";
+		}
+	};
+	var starting={
+		start:function(){
+			return "I can start <br>";
+		}
+	};
+	//Composition Process
+	//Human Class
+	var Human=function(){
+	}
+	//Robot Class
+	var Robot=function(){
+	}
+	//composition function
+	function mixin(target,...sources){
+		Object.assign(target,...sources)
+	}
+	//composition function assignment
+	mixin(Human.prototype,eating,walking,talking)
+	mixin(Robot.prototype,starting,walking,talking)
+	//Object making
+	var Rahul=new Human();
+	var Sonam=new Human();
+	var Roboalpha=new Robot();
+	
+	//accessing
+	document.write("<h3>Rahul</h3>");
+	document.write(Rahul.eat());
+	document.write(Rahul.walk());
+	document.write(Rahul.talk());
+	
+	document.write("<h3>Sonam</h3>");
+	document.write(Sonam.eat());
+	document.write(Sonam.walk());
+	document.write(Sonam.talk());
+	
+	document.write("<h3>RoboAlpha</h3>");
+	document.write(Roboalpha.start());
+	document.write(Roboalpha.walk());
+	document.write(Roboalpha.talk());
+
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

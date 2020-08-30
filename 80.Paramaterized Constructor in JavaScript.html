@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	//Class Declaration
+	class Mobile{
+		constructor(model_no,color){
+			this.model=model_no;
+			this.clr=color;
+		}
+		show(){
+			return this.model+"Price Rs.3050"+this.clr; 
+		}
+	}
+	//Accessing
+	var nokia=new Mobile('Galaxy','White');
+	var lg=new Mobile('Note-4','Black');
+	
+	document.write(nokia.show()+"<br>");
+	document.write(lg.show()+"<br>");
+	console.log(Mobile.prototype);
+
+
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

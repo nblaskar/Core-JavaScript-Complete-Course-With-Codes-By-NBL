@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//Factory Function Without Parameter
+	function  mobile(){
+				return{
+					model:'Galaxy',
+					price:function(){
+								return ("Price=3000");
+									}
+				
+				
+						};
+	
+	}
+	var samsung=mobile();
+	document.write(samsung.model+""+samsung.price()); */
+	
+	
+	
+	
+	//Factory Function Without Parameter
+	function  mobile(b_name,m_no){
+				return{
+					brand:b_name,
+					model:m_no,
+					price:function(rs){
+								return ("RS"+rs);
+									}
+				
+				
+						};
+	
+	}
+	var samsung=mobile('nokia',3310);
+	document.write(samsung.brand+" "+samsung.model+"  "+samsung.price(300)+"<br>");
+	var nokia=mobile('samsung','j7');
+	document.write(nokia.brand+" "+nokia.model+"  "+nokia.price(300));
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

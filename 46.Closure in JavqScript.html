@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*var i=10;
+	function show()
+	{
+		var j=20;
+		document.write(j+"<br>");
+		document.write(i+"<br>");
+	}
+	show();*/
+	
+
+	function show()
+	{
+		var j="J is local variable of Outer Function" ;
+		document.write(j+"<br>");
+		function innerFun()
+		{
+			var k="k is local variable of Inner Function" ;
+			document.write(k+"<br>");
+			document.write(j+"<br>");
+		}
+		innerFun();
+		document.write(j+"<br>");
+		document.write(k+"<br>");
+		
+	}
+	
+	show();
+	
+	
+	</script>
+	
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>
