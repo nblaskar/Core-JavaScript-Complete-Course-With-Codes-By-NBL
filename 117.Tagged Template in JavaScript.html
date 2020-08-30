@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>
+	/*
+	//There are 5  movie ticket each rs 200 and if you buy 5 tickets get discount rs 50 each
+	//There are 5  movie ticket each rs 200 and if you buy less  tha  5 tickets get discount rs 0 each
+	var noofticket=5;
+	var buyticket=5;
+	var eachprice=200;
+	var disprice=50;
+	
+	function myFun(theory,nticket,eprice,bprice,dprice){
+			//return theory;
+			//return nticket ;
+			//return eprice ;
+			//return bprice ;
+			//return dprice ;
+			//return theory[0];
+			//return theory[1];
+			//return theory[2];
+			//return theory[3];
+			return theory[4];
+
+	}
+	document.write(myFun`There are ${noofticket}  movie ticket each rs ${eachprice} and if you
+buy ${buyticket} tickets get discount rs ${disprice} each`);
+	*/
+	/*
+	
+	var noofticket=5;
+	var buyticket=5;	
+	var eachprice=200;
+	var disprice=50;
+	
+	function myFun(theory,nticket,eprice,bprice,dprice){
+		if(bprice<5)
+		{
+			dprice=0;
+			return`${theory[0]} ${nticket} ${theory[1]} ${eprice} ${theory[2]} ${bprice} ${theory[3]} ${dprice} ${theory[4]}`
+		}
+		else{
+			return`${theory[0]} ${nticket} ${theory[1]} ${eprice} ${theory[2]} ${bprice} ${theory[3]} ${dprice} ${theory[4]}`
+
+		}
+		
+
+	}
+	document.write(myFun`There are ${noofticket}  movie ticket each rs ${eachprice} and if you
+buy ${buyticket} tickets get discount rs ${disprice} each`);
+	*/
+	
+	//By Using Rest Parameter
+	var noofticket=5;
+	var buyticket=5;	
+	var eachprice=200;
+	var disprice=50;
+	
+	function myFun(theory,...rest){
+		if(rest[2]<5)
+		{
+			rest[3]=0;
+			return`${theory[0]} ${rest[0]} ${theory[1]} ${rest[1]} ${theory[2]} ${rest[2]} ${theory[3]} ${rest[3]} ${theory[4]}`
+		}
+		else{
+		return`${theory[0]} ${rest[0]} ${theory[1]} ${rest[1]} ${theory[2]} ${rest[2]} ${theory[3]} ${rest[3]} ${theory[4]}`
+		}
+		
+		
+
+	}
+	document.write(myFun`There are ${noofticket}  movie ticket each rs ${eachprice} and if you
+buy ${buyticket} tickets get discount rs ${disprice} each`);
+	
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>

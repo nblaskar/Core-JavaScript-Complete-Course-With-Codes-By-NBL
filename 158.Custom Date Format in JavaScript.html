@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Welcome To JavaScript</title>
+		
+	
+	</head>
+
+	<body>
+	<script>	
+	var tarikh=new Date();
+	document.write(customDateFormat(tarikh));
+	function customDateFormat(pd){
+		var date=pd.getDate();
+		var month=pd.getMonth();
+		month++;
+		var year=pd.getFullYear();
+		return date+"-"+month+"-"+year;
+	}
+	
+	</script>
+	
+	
+	
+	<h1 style=color:red;>i am heading</h1>
+	</body>
+
+</html>
